@@ -206,14 +206,11 @@ nav .content .links {
 .wrapper .search-box {
   position: absolute;
   height: 100%;
-  max-width: calc(100% - 50px);
-  width: 100%;
+  width: 85%;
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s ease;
-  
   z-index: 3;
-  
 }
 
 .wrapper #show-search:checked~.search-box {
@@ -222,9 +219,10 @@ nav .content .links {
 }
 
 .search-box input {
-  width: 90%;
+  width: 75%;
   height: 100%;
   border: none;
+  position: absolute;
   outline: none;
   font-size: 17px;
   color: #fff;
@@ -235,7 +233,10 @@ nav .content .links {
   height: 40px;
   border-radius: 4px;
   margin-top: 6px;
-  margin-inline-start: 9em;
+  align-self: center;
+  left: 15%;
+  right: 15%;
+
 }
 
 .search-box input::placeholder {
